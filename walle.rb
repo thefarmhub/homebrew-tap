@@ -2,16 +2,16 @@
 class Walle < Formula
   desc ""
   homepage "https://aquaponics.ai"
-  version "0.1.3"
+  version "0.1.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/aquaponics-ai/walle-dist/releases/download/v0.1.3/walle_0.1.3_mac-os_x86_64.tar.gz"
-    sha256 "71b62809c2abb1acd7ab0e489d52c35e011105ad4bc0bb4bb0ab386818100429"
+    url "https://github.com/aquaponics-ai/walle-dist/releases/download/v0.1.4/walle_0.1.4_mac-os_x86_64.tar.gz"
+    sha256 "9c4a2b6bff4fb473b4e5a55ddcdc9366f65a6f8534fdd5cb8164f876e8e66208"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/aquaponics-ai/walle-dist/releases/download/v0.1.3/walle_0.1.3_linux_x86_64.tar.gz"
-    sha256 "8be808a01cd7576b5eb49941700c415464c6dcf986e130c9b0a9dfe9cc3b5d48"
+    url "https://github.com/aquaponics-ai/walle-dist/releases/download/v0.1.4/walle_0.1.4_linux_x86_64.tar.gz"
+    sha256 "f01056550216863244abfb79939f273d8c4a74b5ed70372af8cffe8b99f462b0"
   end
 
   def install

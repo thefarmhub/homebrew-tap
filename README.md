@@ -4,5 +4,4 @@ A quick way to get up and running with [Aquaponics AI](https://aquaponics.ai) ut
 
 ```
 brew tap aquaponics-ai/homebrew-tap
-brew install walle
 ```

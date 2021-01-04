@@ -2,16 +2,16 @@
 class Sparky < Formula
   desc ""
   homepage "https://aquaponics.ai"
-  version "0.1.12"
+  version "0.1.13"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/aquaponics-ai/sparky-cli-dist/releases/download/v0.1.12/sparky_0.1.12_mac-os_x86_64.tar.gz"
-    sha256 "a358bea2e339793ff4fb32a2d01e0ddaf410cbf84857e59a7de77eb889377104"
+    url "https://github.com/aquaponics-ai/sparky-cli-dist/releases/download/v0.1.13/sparky_0.1.13_mac-os_x86_64.tar.gz"
+    sha256 "05d929b15e9cf51d17f25713faa9413e816fd078d512b0a049d72be5a2798909"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/aquaponics-ai/sparky-cli-dist/releases/download/v0.1.12/sparky_0.1.12_linux_x86_64.tar.gz"
-    sha256 "e947405fa1dc65527d53ccf5cb8a84b3570af3ee8a94b4a2602a1af979592bdd"
+    url "https://github.com/aquaponics-ai/sparky-cli-dist/releases/download/v0.1.13/sparky_0.1.13_linux_x86_64.tar.gz"
+    sha256 "fa4edbe9a856b910f2a57df247f4db2f31460737b1692b2208476d9db13d6939"
   end
 
   def install

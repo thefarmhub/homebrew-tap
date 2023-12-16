@@ -1,7 +1,7 @@
-# Aquaponics AI Homebrew Tap
+# FarmHub Homebrew Tap
 
-A quick way to get up and running with [Aquaponics AI](https://aquaponics.ai) utility software.
+A quick way to get up and running with [FarmHub](https://farmhub.ag) utility software.
 
 ```
-brew tap aquaponics-ai/homebrew-tap
+brew tap thefarmhub/homebrew-tap
 ```

@@ -5,20 +5,20 @@
 class Sparky < Formula
   desc ""
   homepage "https://farmhub.ag"
-  version "0.2.6"
+  version "0.2.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.6/sparky_Darwin_x86_64.tar.gz"
-      sha256 "b5b6c5ce4e4530cfec18442c058f772906bc273d766437dd3c65ee87d61f0c13"
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.7/sparky_Darwin_x86_64.tar.gz"
+      sha256 "b095a82e0c5c32c7c49286f8c1c3867839ac81f25674cd5eaa505237c44ea06e"
 
       def install
         bin.install "sparky"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.6/sparky_Darwin_arm64.tar.gz"
-      sha256 "c298d5c4960ff35a3b6aac6ca17c7add50fbe2dc46658f5f78bac9bd5fb46b6a"
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.7/sparky_Darwin_arm64.tar.gz"
+      sha256 "3c24fc2fbaebd71dfed8772c68972364fae3a07d6a01fa5990ed979e8a2d2a50"
 
       def install
         bin.install "sparky"
@@ -28,16 +28,16 @@ class Sparky < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.6/sparky_Linux_arm64.tar.gz"
-      sha256 "449e9075253881a790eddc3943e937a58ba7bdeb21be1819e3f95775768df5a3"
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.7/sparky_Linux_arm64.tar.gz"
+      sha256 "b16d9c882b757ea3adf96ffe794e7e8497107e3442dc14c615d013e5e0be2a0c"
 
       def install
         bin.install "sparky"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.6/sparky_Linux_x86_64.tar.gz"
-      sha256 "36e0e6249bfa4bc0b0fcd82c45bec86508ceaab504bc5f2ab4f0258efc6a996b"
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.7/sparky_Linux_x86_64.tar.gz"
+      sha256 "197f109e9ab6596f2d9cabc61d5a49a9b11c2af69e19e0c7da73f5286d7f6c7b"
 
       def install
         bin.install "sparky"

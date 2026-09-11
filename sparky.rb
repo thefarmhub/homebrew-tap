@@ -5,20 +5,20 @@
 class Sparky < Formula
   desc ""
   homepage "https://farmhub.ag"
-  version "0.2.12"
+  version "0.2.13"
 
   on_macos do
-    on_intel do
-      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.12/sparky_Darwin_x86_64.tar.gz"
-      sha256 "9efa8730b8ec20f6c06819461052c31ec6e30b95c811e3928d7c32358aff9374"
+    if Hardware::CPU.intel?
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.13/sparky_Darwin_x86_64.tar.gz"
+      sha256 "3bc5cc4c395e310b27c104c813442c3ec45be052003458c2a842b9bb3abe11ae"
 
       def install
         bin.install "sparky"
       end
     end
-    on_arm do
-      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.12/sparky_Darwin_arm64.tar.gz"
-      sha256 "2764caa73c687a62b2efb3af4b957db62ece1c0a60828ce31513c4ab2b03b8f9"
+    if Hardware::CPU.arm?
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.13/sparky_Darwin_arm64.tar.gz"
+      sha256 "fcad26e5d0d834d0c770651ec2bf038fe91da94c5c58d0d95731a4c2f0cc26f2"
 
       def install
         bin.install "sparky"
@@ -27,24 +27,18 @@ class Sparky < Formula
   end
 
   on_linux do
-    on_intel do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.12/sparky_Linux_x86_64.tar.gz"
-        sha256 "9148e3cb6a25b27676ce0acc1cfe07d923b0bc41fe3a4ef7c49da78240702588"
-
-        def install
-          bin.install "sparky"
-        end
+    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.13/sparky_Linux_x86_64.tar.gz"
+      sha256 "df2b1ee1a75de2db677cc31ac5afd07dbba1b3e8e7b3c9527a828198867ab0d5"
+      def install
+        bin.install "sparky"
       end
     end
-    on_arm do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.12/sparky_Linux_arm64.tar.gz"
-        sha256 "a4946756981602cd4b4b2a82f19631e1ee0f47c8a3f91251901dbc4210b34159"
-
-        def install
-          bin.install "sparky"
-        end
+    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.13/sparky_Linux_arm64.tar.gz"
+      sha256 "69eedacfdb1479780a799b13d82dd2673431d1d128a6e3ee2bb0ae125fc454dd"
+      def install
+        bin.install "sparky"
       end
     end
   end

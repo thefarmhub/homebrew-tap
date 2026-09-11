@@ -5,20 +5,20 @@
 class Sparky < Formula
   desc ""
   homepage "https://farmhub.ag"
-  version "0.2.10"
+  version "0.2.11"
 
   on_macos do
     on_intel do
-      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.10/sparky_Darwin_x86_64.tar.gz"
-      sha256 "0ee3f20d7aad23a9e1132fa4507a74d8c0549246887c7a0c48ff15000ce2e53d"
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.11/sparky_Darwin_x86_64.tar.gz"
+      sha256 "ec12d046b730f8686da27910002815bbfa5ddf1ecad53620e4019c16322fe1d8"
 
       def install
         bin.install "sparky"
       end
     end
     on_arm do
-      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.10/sparky_Darwin_arm64.tar.gz"
-      sha256 "9db2861bc1fead732eb4a092808e77588a05e37e577bc9623f435b20b15e5435"
+      url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.11/sparky_Darwin_arm64.tar.gz"
+      sha256 "db0cb97afadffda05a73cc1eee17ce4d9ee038431ee57091b49dca081cec49e8"
 
       def install
         bin.install "sparky"
@@ -29,8 +29,8 @@ class Sparky < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.10/sparky_Linux_x86_64.tar.gz"
-        sha256 "fb2c77bb85ffa88428b04594dc247b44a5793ddee6593b023e05d5021edbf0f8"
+        url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.11/sparky_Linux_x86_64.tar.gz"
+        sha256 "d2b49b2ef804b1f3835a80465ad61fbc03071aee6b5c8913ade03dab02eb1206"
 
         def install
           bin.install "sparky"
@@ -39,8 +39,8 @@ class Sparky < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.10/sparky_Linux_arm64.tar.gz"
-        sha256 "12f30d83f9bbe7e9f6b9140e0a8ff85aa2057798dc3ad638751769fac49c717c"
+        url "https://github.com/thefarmhub/sparky-cli-dist/releases/download/v0.2.11/sparky_Linux_arm64.tar.gz"
+        sha256 "55f211453e4b8108e44826ec35938cf747a02b8ddb83b8b458162a6aa1a50d23"
 
         def install
           bin.install "sparky"
